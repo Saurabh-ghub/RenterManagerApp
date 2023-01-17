@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<LinearLayout
+
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".Flat_details">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Enter New Flat details"
+		android:id="@+id/flat_detail_heading_text"
+		android:textStyle="bold"
+		android:textSize="30dp"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:background="@color/teal_200"
+
+		/>
+	<EditText
+		android:id="@+id/idNickName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:hint="Nick Name"
+		android:inputType="text" />
+	<!--edit text for user name-->
+	<EditText
+		android:id="@+id/idNo_of_Rooms"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:hint="Enter No. of rooms"
+		android:inputType="text" />
+
+	<!--edit text for user phone number-->
+	<EditText
+		android:id="@+id/idRoomRent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:hint="Enter Monthly Room Rent"
+		android:inputType="text" />
+
+	<!--edit text for user email-->
+	<EditText
+		android:id="@+id/idInitialMeterl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:hint="Enter Meter Reading"
+		android:inputType="text" />
+
+	<!--edit text for user email-->
+	<EditText
+		android:id="@+id/idUnitRate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:hint="Electricity per unit rate"
+		android:inputType="text" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+		<EditText
+			android:id="@+id/joiningdate"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginBottom="10dp"
+			android:hint="Joining Date">
+
+		</EditText>
+     <ImageButton
+        android:id="@+id/calender_view"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/joiningdate"
+        android:layout_alignBottom="@+id/joiningdate"
+        android:layout_alignRight="@+id/joiningdate"
+        android:src="@drawable/ic_baseline_calendar_month_24" />
+
+</RelativeLayout>
+
+
+	<EditText
+		android:id="@+id/idAdvance"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:hint="Enter Advance amount paid"
+		android:inputType="text" />
+
+<!--	<Button-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:text="Add Renter"-->
+<!--		android:textAllCaps="false"-->
+<!--		android:layout_margin="10dp"-->
+<!--		android:id="@+id/add_renter"/>-->
+
+	<!--button for saving a new contact-->
+	<Button
+		android:id="@+id/idBtnAddContact"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:text="Save Flat Details"
+		android:textAllCaps="false" />
+
+</LinearLayout>
+</ScrollView>

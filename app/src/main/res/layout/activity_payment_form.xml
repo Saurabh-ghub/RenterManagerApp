@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment_Form">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Room Rent Payment"
+        android:layout_margin="10dp"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:id="@+id/paidRoomRentAmt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meter Payment"
+        android:layout_margin="10dp"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:id="@+id/paidMeterAmt"/>
+<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paid By "
+    android:text=""
+        android:layout_margin="10dp"
+        android:id="@+id/paidBy"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment mode"
+        android:text=""
+        android:layout_margin="10dp"
+        android:id="@+id/payMode"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment Date"
+        android:layout_margin="10dp"
+        android:text=""
+        android:id="@+id/paidDate"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            app:layout_constraintEnd_toEndOf="@+id/paidDate"
+            android:id="@+id/dateView"
+            android:layout_marginEnd="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Remarks"
+        android:layout_margin="10dp"
+        android:text=""
+        android:id="@+id/paidRemark"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/save_payment"
+        android:text="Save payment details"
+        android:layout_marginStart="100dp"
+        />
+
+</LinearLayout>
